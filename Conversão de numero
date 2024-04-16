@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Digite um número decimal:");
+        int decimalNumber = Convert.ToInt32(Console.ReadLine());
+
+        string binary = Convert.ToString(decimalNumber, 2);
+        string octal = Convert.ToString(decimalNumber, 8);
+
+        Console.WriteLine($"O número {decimalNumber} em binário é: {binary}");
+        Console.WriteLine($"O número {decimalNumber} em octal é: {octal}");
+    }
+}
